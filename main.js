@@ -1,4 +1,13 @@
+const env = process.env.NODE_ENV || 'development'
 const { app, BrowserWindow } = require('electron')
+const path = require('node:path')
+
+if (env === 'development') {
+  require('electron-reload')(__dirname, {
+    electron: path.join(__dirname, 'node_modules', '.bin', 'electron'),
+    hardResetMethod: 'exit',
+  })
+}
 
 const createWindow = () => {
   const win = new BrowserWindow({
