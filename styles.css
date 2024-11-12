@@ -64,9 +64,9 @@ body {
   background-color: #555;
   margin-top: 1em;
   width: 4rem;
-  padding: .5em;
+  padding: 0.5em;
   border: 2px solid #df315f;
-  border-radius: .35em;
+  border-radius: 0.35em;
   color: #fff;
 }
 
@@ -75,13 +75,13 @@ body {
 }
 
 .mezclar {
-  padding: .35em .5em;
+  padding: 0.35em 0.5em;
   border: 2px solid #df315f;
   background-color: #555;
   color: #fff;
   font-size: 1rem;
   margin-bottom: 1em;
-  border-radius: .35em;
+  border-radius: 0.35em;
 }
 
 .result-container {
