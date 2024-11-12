@@ -1,30 +1,34 @@
-// const rootStyles = document.documentElement.style
-// const redInput = document.getElementById('red-input')
-// const greenInput = document.getElementById('green-input')
-// const blueInput = document.getElementById('blue-input')
-// const button = document.getElementById('button')
-// const resultText = document.getElementById('result-text')
-// let redValue
-// let greenValue
-// let blueValue
+const rootStyles = document.documentElement.style
+const redInput = document.getElementById('redInput')
+const greenInput = document.getElementById('greenInput')
+const blueInput = document.getElementById('blueInput')
+const mixer = document.getElementById('mixer')
+const resultText = document.getElementById('resultText')
+let redValue
+let greenValue
+let blueValue
 
-// redInput.addEventListener('change', (e) => {
-//   let value = e.target.value
-//   redValue = value
-// })
+redInput.addEventListener('change', (e) => {
+  let value = e.target.value
+  redValue = value
+})
 
-// greenInput.addEventListener('change', (e) => {
-//   let value = e.target.value
-//   greenValue = value
-// })
+greenInput.addEventListener('change', (e) => {
+  let value = e.target.value
+  greenValue = value
+})
 
-// blueInput.addEventListener('change', (e) => {
-//   let value = e.target.value
-//   blueValue = value
-// })
+blueInput.addEventListener('change', (e) => {
+  let value = e.target.value
+  blueValue = value
+})
 
-// button.addEventListener('click', (e) => {
-//   let resultValue = `rgb(${redValue}, ${greenValue}, ${blueValue})`
-//   rootStyles.setProperty('--result', resultValue)
-//   resultText.innerText = `R: ${redValue} G: ${greenValue} B: ${blueValue}`
-// })
+mixer.addEventListener('submit', (e) => {
+  e.preventDefault()
+  let resultValue = `rgb(${redValue}, ${greenValue}, ${blueValue})`
+  rootStyles.setProperty('--result', resultValue)
+  resultText.innerText = `rgb(${redValue}, ${greenValue}, ${blueValue})`
+  redInput.value = ''
+  greenInput.value = ''
+  blueInput.value = ''
+})

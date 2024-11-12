@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../normalize.css">
+  <link rel="stylesheet" href="../styles.css">
+  <title>Aprendiendo RGB</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="../index.html">
+      <h1 class="title">Aprendiendo RGB</h1>
+    </a>
+    <img class="logo" src="../assets/uptamca-logo.png" alt="Logo de la UPTAMCA">
+  </header>
+
+  <main class="main">
+    <h2 class="subtitle">Mezclador RGB</h2>
+    <p class="text">
+      Te daré 3 campos para que introduzcas un valor entre 0 y 255 en cada uno, y podrás ver la combinación resultante.
+    </p>
+
+    <section class="mixerSection">
+      <form class="mixer" id="mixer">
+        <label class="red" for="redInput">Rojo</label>
+        <input class="input" type="number" name="redInput" id="redInput" min="0" max="255" required>
+        <label class="green" for="greenInput">Verde</label>
+        <input class="input" type="number" name="greenInput" id="greenInput" min="0" max="255" required>
+        <label class="blue" for="blueInput">Azúl</label>
+        <input class="input" type="number" name="blueInput" id="blueInput" min="0" max="255" required>
+        <button class="button">¡Mezclar!</button>
+      </form>
+      <article class="result">
+        <div class="resultSample" id="result"></div>
+        <p class="resultText" id="resultText">rgb(217, 217, 217)</p>
+      </article>
+    </section>
+
+    <a href="../index.html" class="button">Volver a Inicio</a>
+  </main>
+
+  <script src="../renderer.js"></script>
+</body>
+
+</html>

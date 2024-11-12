@@ -6,6 +6,7 @@
   --black: rgb(40, 47, 54);
   --lighterBlack: rgb(52, 59, 66);
   --textColor: rgb(217, 217, 217);
+  --result: rgb(217, 217, 217);
 }
 
 html {
@@ -83,18 +84,19 @@ a {
   color: var(--celeste);
 }
 
-.linkButton {
+.button {
   display: inline-block;
-  margin-top: 1em;
+  margin: 1em 0.25em 0;
   padding: 0.35em 0.7em;
   background-color: var(--lighterBlack);
   color: var(--blue);
   border: 1px solid var(--celeste);
   border-radius: 0.5em;
   transition: color 0.2s ease-in-out, background-color 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-.linkButton:hover {
+.button:hover {
   background-color: var(--purple);
   color: var(--celeste);
 }
@@ -191,4 +193,42 @@ a {
 .colorText {
   color: var(--celeste);
   font-size: 0.75rem;
+}
+
+.mixerSection {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mixer {
+  width: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.input {
+  margin: 0 0 0.5em;
+  background-color: var(--lighterBlack);
+  padding: 0.25em;
+  border-radius: 0.5em;
+  border: 1px solid var(--celeste);
+  color: var(--textColor);
+}
+
+.input:focus {
+  outline: none;
+}
+
+.resultSample {
+  margin: auto;
+  width: 3.5em;
+  height: 3.5em;
+  background-color: var(--result);
+  border: 3px solid var(--textColor);
+  border-radius: 50%;
 }
