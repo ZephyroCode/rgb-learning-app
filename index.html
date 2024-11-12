@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+  <title>Mezclador RGB</title>
+</head>
+<body>
+  <h1 class="title">Mezclador RGB</h1>
+  <section class="contenedor">
+		<article class="color-box">
+			<h2 class="subtitle">Rojo</h2>
+			<div class="red-circle"></div>
+      <input class="input" id="red-input" type="number" min="0" max="255">
+		</article>
+
+		<article class="color-box">
+			<h2 class="subtitle">Verde</h2>
+			<div class="green-circle"></div>
+      <input class="input" id="green-input" type="number" min="0" max="255">
+		</article>
+
+		<article class="color-box">
+			<h2 class="subtitle">Azul</h2>
+			<div class="blue-circle"></div>
+      <input class="input" id="blue-input" type="number" min="0" max="255">
+		</article>
+	</section>
+
+  <button class="mezclar" id="button">Combinar</button>
+
+  <section class="result-container">
+    <h2 class="subtitle">Resultado:</h2>
+    <article class="result" id="result"></article>
+    <p id="result-text"></p>
+  </section>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
