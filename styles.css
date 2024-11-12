@@ -1,10 +1,20 @@
+:root {
+  --pink: rgb(255, 108, 137);
+  --celeste: rgb(168, 249, 255);
+  --purple: rgb(104, 116, 232);
+  --blue: rgb(16, 152, 247);
+  --black: rgb(40, 47, 54);
+  --lighterBlack: rgb(52, 59, 66);
+  --textColor: rgb(211, 211, 211);
+}
+
 html {
   font-size: 16px;
 }
 
 body {
-  background-color: #333;
-  color: #ddd;
+  background-color: var(--black);
+  color: var(--textColor);
   min-height: 100dvh;
 }
 
@@ -13,6 +23,57 @@ img {
 }
 
 .header {
+  padding: 0.5em 1em;
   height: 4em;
-  background-color: #444;
+  background-color: var(--lighterBlack);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--celeste);
+  margin-bottom: 3em;
+}
+
+.title {
+  font-size: 1.25rem;
+  color: var(--purple);
+}
+
+.logo {
+  width: 2em;
+}
+
+.main {
+  text-align: center;
+}
+
+.subtitle {
+  color: var(--blue);
+  font-size: 1.1rem;
+}
+
+.subtitle2 {
+  color: var(--pink);
+  font-size: 1.1rem;
+}
+
+.text {
+  margin: auto;
+  width: 70%;
+  margin-bottom: 0.5em;
+}
+
+.red {
+  color: #f00;
+}
+
+.green {
+  color: #0f0;
+}
+
+.blue {
+  color: #00f;
+}
+
+.em {
+  color: var(--celeste);
 }
