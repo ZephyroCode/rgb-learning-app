@@ -7,6 +7,7 @@
   --lighterBlack: rgb(52, 59, 66);
   --textColor: rgb(217, 217, 217);
   --result: rgb(217, 217, 217);
+  --exercise: rgb(217, 217, 217);
 }
 
 html {
@@ -86,7 +87,7 @@ a {
 
 .button {
   display: inline-block;
-  margin: 1em 0.25em 0;
+  margin: 1em 0.25em;
   padding: 0.35em 0.7em;
   background-color: var(--lighterBlack);
   color: var(--blue);
@@ -196,7 +197,7 @@ a {
 }
 
 .mixerSection {
-  margin: auto;
+  margin: 1em auto 0;
   width: 50%;
   display: flex;
   justify-content: space-between;
@@ -229,6 +230,15 @@ a {
   width: 3.5em;
   height: 3.5em;
   background-color: var(--result);
+  border: 3px solid var(--textColor);
+  border-radius: 50%;
+}
+
+.exerciseSample {
+  margin: auto;
+  width: 3.5em;
+  height: 3.5em;
+  background-color: var(--exercise);
   border: 3px solid var(--textColor);
   border-radius: 50%;
 }

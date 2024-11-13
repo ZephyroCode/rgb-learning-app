@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -18,32 +18,35 @@
   </header>
 
   <main class="main">
-    <h2 class="subtitle">Mezclador RGB</h2>
+    <h2 class="subtitle">Ejercicio de RGB</h2>
     <p class="text">
-      Te daré 3 campos para que introduzcas un valor entre 0 y 255 en cada uno, y podrás ver la combinación resultante.
+      Te generaré un color aleatorio, y deberás decirme cuánto crees que tiene ese color en cada uno de los 3 canales. Y
+      no te preocupes, no te evaluaré, solo es para reforzar tu conocimiento de cómo funciona el RGB. Al darle al botón
+      de enviar, te diré la respuesta.
     </p>
 
     <section class="mixerSection">
-      <form class="mixer" id="mixer">
+      <article class="result">
+        <button class="button" id="generatorButton">Generar</button>
+        <div class="exerciseSample" id="exercise"></div>
+        <p class="resultText" id="resultText">Dale click a <em class="em">Generar</em></p>
+      </article>
+      <form class="mixer" id="exerciseForm">
         <label class="red" for="redInput">Rojo</label>
         <input class="input" type="number" name="redInput" id="redInput" min="0" max="255" required>
         <label class="green" for="greenInput">Verde</label>
         <input class="input" type="number" name="greenInput" id="greenInput" min="0" max="255" required>
         <label class="blue" for="blueInput">Azúl</label>
         <input class="input" type="number" name="blueInput" id="blueInput" min="0" max="255" required>
-        <button class="button">¡Mezclar!</button>
+        <button class="button">¡Enviar!</button>
       </form>
-      <article class="result">
-        <div class="resultSample" id="result"></div>
-        <p class="resultText" id="resultText">rgb(217, 217, 217)</p>
-      </article>
     </section>
 
     <a href="../index.html" class="button">Volver a Inicio</a>
-    <a href="exercise.html" class="button">Quiero un ejercicio</a>
+    <a href="mixer.html" class="button">¡Quiero mezclar!</a>
   </main>
 
-  <script src="../mixer.js"></script>
+  <script src="../exercise.js"></script>
 </body>
 
 </html>
